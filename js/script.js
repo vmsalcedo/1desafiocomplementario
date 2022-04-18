@@ -1,3 +1,7 @@
+//  Calculo de Metabolismo Basal
+
+
+
 alert("Ingresa los datos para calcular tu metabolismo basal");
 
 // Solicito informacion de sexo //
@@ -8,9 +12,9 @@ while (valor) {
     sexo = prompt("Ingresa tu sexo : Hombre o Mujer ");
     sexo = sexo.toLowerCase(); //convierto variable a minusculas //
     if (sexo == "hombre") {
-        valor = false;         // si es V entonces termina el ciclo //
+        valor = false; // si es V entonces termina el ciclo //
     } else if (sexo == "mujer") {
-        valor = false;          // si es V entonces termina el ciclo //
+        valor = false; // si es V entonces termina el ciclo //
     } else if (sexo == null) {
         break;
     } else {
@@ -24,12 +28,16 @@ let edad;
 let valor2 = true;
 while (valor2) {
     edad = Number(prompt("Ingresa tu edad en años"));
-    if (edad > 3 && edad < 100) {
+    if (edad > 3 && edad < 100 ) {
         valor2 = false;
-    } else {
-        alert("edad incorrecta");
+    } 
+    else { 
+        alert("edad incorrecto");
+        
     }
 }
+
+// Solicito informacion del peso//
 
 let peso;
 let valor3 = true;
@@ -41,6 +49,8 @@ while (valor3) {
         alert("peso incorrecto");
     }
 }
+
+// Solicito informacion de Altura//
 
 let altura;
 let valor4 = true;
@@ -60,27 +70,19 @@ if (sexo === "mujer") {
         1.8 * altura -
         4.7 * edad +
         "  " +
-        " Kilocalorias diarias "
+        " calorias diarias "
     );
 } else if (sexo === "hombre") {
     alert(
-        66 + 13.7 * peso + 5 * altura - 6.8 * edad + "  " + " Kilocalorias diarias "
+        66 + 13.7 * peso + 5 * altura - 6.8 * edad + "  " + " calorias diarias "
     );
 }
 
-// let sexo = prompt("ingresa tu sexo Hombre o Mujer".toLowerCase());
-//     if (sexo=="hombre"){
-//         let edad = Number (prompt("ingresa tu edad"))
-//     }
 
-//     else if (sexo=="mujer"){
-//         let edad = Number (prompt("ingresa tu edad"))
-//     }
 
-//     else {
-//         alert("ingresa datos correctos")
 
-//     }
+
+
 
 // let sexo = prompt ("Ingresa tu sexo  Hombre o Mujer");
 // sexo = sexo.toLowerCase();

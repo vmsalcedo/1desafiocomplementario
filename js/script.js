@@ -64,17 +64,10 @@ while (valor4) {
 }
 
 if (sexo === "mujer") {
-    alert(
-        655 +
-        9.6 * peso +
-        1.8 * altura -
-        4.7 * edad +
-        "  " +
-        " calorias diarias "
+    alert( "Tu indice de MTB "+" "+"es"+" " +(655 +9.6 * peso +1.8 * altura - 4.7 * edad )+"  " + " calorias diarias "
     );
 } else if (sexo === "hombre") {
-    alert(
-        66 + 13.7 * peso + 5 * altura - 6.8 * edad + "  " + " calorias diarias "
+    alert("Tu indice de MTB "+" "+"es"+" " +(66 + 13.7 * peso + 5 * altura - 6.8 * edad )+ "  " + " calorias diarias "
     );
 }
 
